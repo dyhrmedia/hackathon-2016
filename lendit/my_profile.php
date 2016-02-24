@@ -78,25 +78,42 @@
 
         <div class="col-sm-8 col-sm-offset-1 blog-main">
         
-        <h1>Mark Hansen</h1>
-        <table width="100%">
+        <table width="100%" cellpadding="0" cellspacing="10">
         <tr>
-        <td colspan="2" width="40%" >
+        <td width="40%" class="tdinformation">
 		<div class='profilepicture' style='background: url(pictures/profiles/mark_hansen.JPG) no-repeat; background-size:cover; background-position:center;'></div></td>
-        <td><h2>Posts</h2></td>
+        <td width="60%" rowspan="3" ><h2>Posts</h2>
+          <div class="blog-post">
+            <h2 class="blog-post-title">Bike for rent</h2>
+            <p class="blog-post-meta">This is a very nice bike. You can rent it for a week. It is blue and have 2 wheels. So now you just write me and it is yours for the week.</p>
+            <a class="btn btn-default" type="button" href="#">Rent it</a>
+          </div><!-- /.blog-post --></td>
         </tr>
         <tr>
-        <td colspan="2" class="tdinformation-header">Mark Hansen</td>
-        <td></td>
+        <td class="tdinformation tdheader">Mark Hansen</td>
         </tr>
         <tr>
-        <td class="tdright tdinformation">Birthday: 
-        <br>Occupation:</td>
-        <td class="tdleft tdinformation">
-        01/01 1991
-        <br>Student
-       	</td>
-        <td>HHEEJ</td>
+        <td class="tdright tdinformation">
+          <p>Student at Syddansk Universitet
+            <br>25 years old
+            </p>
+          
+          <p>Munkebjergvej 10
+            <br>5000 Odense C
+            <br>Danmark
+            </p>
+          
+          <p>
+            +45 20 10 20 10
+            <br>markhansen@live.dk
+            <bR><bR>
+            </p>
+          
+          <p><h2>Ratings</h2>
+          </p>
+          <p>Feedback time</p>
+          <p>Trustworth</p>
+          <p>Product quality</p></td>
         </tr>
         </table>
         
