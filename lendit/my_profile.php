@@ -77,12 +77,32 @@
         </div><!-- /.blog-sidebar -->
 
         <div class="col-sm-8 col-sm-offset-1 blog-main">
-          <div class="blog-post">
-            <img src="bike.png" class="img-responsive bigimg" alt="Post image" width="" height=""/></a>
-            <h2 class="blog-post-title">Bike for rent</h2>
-            <p class="blog-post-meta">Januar 1, 2016 <a class="pinky" href="#">Mark Hansen</a></p>
-            <p>This is a very nice bike. You can rent it for a week. It is blue and have 2 wheels. So now you just write me and it is yours for the week.</p>
-            <a class="btn btn-default" type="button" href="#">Rent it</a>
+        
+        <h1>Mark Hansen</h1>
+        <table>
+        <tr>
+        <td>  <?php	
+$sql = "SELECT * FROM forhandler;";
+$result = mysqli_query($dbc, $sql);
+if (mysqli_num_rows($result) > 0) {
+    // output data of each row
+    while($row = mysqli_fetch_assoc($result)) {
+
+		
+		echo "<div class='webbox'>
+		<a href='". $row["link"] ."'>
+		<div class='webboxbillede' style='background: url(billeder/forhandler/". $row["billede"] .".png) no-repeat; background-size:cover;'></div>
+	
+	" .$row["marke"].  "</a></div>";
+		
+	}
+	}
+ 
+?></td>
+        </tr>
+        </table>
+        
+        
           </div><!-- /.blog-post -->
           
         
