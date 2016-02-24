@@ -15,6 +15,8 @@
 
     <!-- Custom styles for this template -->
     <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/layout.css">
 
   </head>
 
@@ -40,18 +42,14 @@
           </form>
           <div class="sidebar-module">
             <h4>Categories</h4>
-            <div class="checkbox">
-              <label><input type="checkbox" value="">Bikes</label>
-            </div>
-            <div class="checkbox">
-              <label><input type="checkbox" value="">Electronics</label>
-            </div>
-            <div class="checkbox disabled">
-              <label><input type="checkbox" value="" disabled>Houseware</label>
-            </div>
-            <div class="checkbox disabled">
-              <label><input type="checkbox" value="" disabled>Tools</label>
-            </div>
+            <ul id="filters" class="clearfix">
+              <li><span class="filter active" data-filter="app card icon logo web">All</span></li>
+              <li><span class="filter" data-filter="app">App</span></li>
+              <li><span class="filter" data-filter="card">Card</span></li>
+              <li><span class="filter" data-filter="icon">Icon</span></li>
+              <li><span class="filter" data-filter="logo">Logo</span></li>
+              <li><span class="filter" data-filter="web">Web</span></li>
+            </ul>
           </div>
           <div class="sidebar-module">
             <h4>Social media</h4>
@@ -99,7 +97,65 @@
         </div><!-- /.blog-main -->
       </div><!-- /.row -->
     </div><!-- /.container -->
+    <div class="container">
 
+  		<div id="portfoliolist">
+
+  			<div class="portfolio logo" data-cat="logo">
+  				<div class="portfolio-wrapper">
+  					<img src="bike.png" alt="" />
+  					<div class="label">
+  						<div class="label-text">
+  							<a class="text-title">Bird Document</a>
+  							<span class="text-category">Logo</span>
+  						</div>
+  						<div class="label-bg"></div>
+  					</div>
+  				</div>
+  			</div>
+
+  			<div class="portfolio app" data-cat="app">
+  				<div class="portfolio-wrapper">
+  					<img src="bike.png" alt="" />
+  					<div class="label">
+  						<div class="label-text">
+  							<a class="text-title">Visual Infography</a>
+  							<span class="text-category">APP</span>
+  						</div>
+  						<div class="label-bg"></div>
+  					</div>
+  				</div>
+  			</div>
+
+  			<div class="portfolio web" data-cat="web">
+  				<div class="portfolio-wrapper">
+  				  <img src="bike.png" alt="" />
+  					<div class="label">
+  						<div class="label-text">
+  							<a class="text-title">Sonor's Design</a>
+  							<span class="text-category">Web design</span>
+  						</div>
+  						<div class="label-bg"></div>
+  					</div>
+  				</div>
+  			</div>
+
+  			<div class="portfolio card" data-cat="card">
+  				<div class="portfolio-wrapper">
+  					<img src="bike.png" alt="" />
+  					<div class="label">
+  						<div class="label-text">
+  							<a class="text-title">Typography Company</a>
+  							<span class="text-category">Business card</span>
+  						</div>
+  						<div class="label-bg"></div>
+  					</div>
+  				</div>
+  			</div>
+
+  		</div>
+
+  	</div><!-- container -->
     <footer class="blog-footer">
       <p>
         <a href="#">lendit 2016</a>
@@ -112,6 +168,52 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-  </body>
-</html>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/jquery.mixitup.min.js"></script>
+
+
+    <script type="text/javascript">
+    $(function () {
+
+    	var filterList = {
+
+    		init: function () {
+
+    			// MixItUp plugin
+    			// http://mixitup.io
+    			$('#portfoliolist').mixitup({
+    				targetSelector: '.portfolio',
+    				filterSelector: '.filter',
+    				effects: ['fade'],
+    				easing: 'snap',
+    				// call the hover effect
+    				onMixEnd: filterList.hoverEffect()
+    			});
+
+    		},
+
+    		hoverEffect: function () {
+
+    			// Simple parallax effect
+    			$('#portfoliolist .portfolio').hover(
+    				function () {
+    					$(this).find('.label').stop().animate({bottom: 0}, 200, 'easeOutQuad');
+    					$(this).find('img').stop().animate({top: -30}, 500, 'easeOutQuad');
+    				},
+    				function () {
+    					$(this).find('.label').stop().animate({bottom: -40}, 200, 'easeInQuad');
+    					$(this).find('img').stop().animate({top: 0}, 300, 'easeOutQuad');
+    				}
+    			);
+
+    		}
+
+    	};
+
+    	// Run the show!
+    	filterList.init();
+
+
+    });
+    </script>
+    </html>
