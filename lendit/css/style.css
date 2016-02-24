@@ -174,14 +174,16 @@ h6, .h6 {
 
 /* Profile */
 
-.forbil {
+.profilepicture {
 	border-radius: 50%;
-	width: 100%;
-	box-shadow: 0 0 0 1px #fff;
+	width: 20%;
+	padding-bottom: 20%;
+	margin: auto;
+	box-shadow: 0 0 0 1px #CCC;
     transition: box-shadow 0.3s;
 }
 
-.forbil:hover{
+.profilepicture:hover{
 	box-shadow: 0 0 0 2px #F69;
 }
 

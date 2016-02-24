@@ -79,26 +79,10 @@
         <div class="col-sm-8 col-sm-offset-1 blog-main">
         
         <h1>Mark Hansen</h1>
-        <table>
+        <table width="100%">
         <tr>
-        <td>  <?php	
-$sql = "SELECT * FROM forhandler;";
-$result = mysqli_query($dbc, $sql);
-if (mysqli_num_rows($result) > 0) {
-    // output data of each row
-    while($row = mysqli_fetch_assoc($result)) {
-
-		
-		echo "<div class='webbox'>
-		<a href='". $row["link"] ."'>
-		<div class='webboxbillede' style='background: url(billeder/forhandler/". $row["billede"] .".png) no-repeat; background-size:cover;'></div>
-	
-	" .$row["marke"].  "</a></div>";
-		
-	}
-	}
- 
-?></td>
+        <td width="20%">
+		<div class='profilepicture' style='background: url(pictures/profiles/mark_hansen.JPG) no-repeat; background-size:cover; background-position:center;'></div></td>
         </tr>
         </table>
         
