@@ -78,7 +78,7 @@
 
         <div class="col-sm-8 col-sm-offset-1 blog-main">
         
-        <table width="100%" cellpadding="0" cellspacing="10">
+        <table width="100%">
         <tr>
         <td width="30%" class="tdinformation">
 		<div class='profilepicture' style='background: url(pictures/profiles/mark_hansen.JPG) no-repeat; background-size:cover; background-position:center;'></div></td>
