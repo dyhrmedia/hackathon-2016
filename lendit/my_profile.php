@@ -81,8 +81,22 @@
         <h1>Mark Hansen</h1>
         <table width="100%">
         <tr>
-        <td width="20%">
+        <td colspan="2" width="40%" >
 		<div class='profilepicture' style='background: url(pictures/profiles/mark_hansen.JPG) no-repeat; background-size:cover; background-position:center;'></div></td>
+        <td><h2>Posts</h2></td>
+        </tr>
+        <tr>
+        <td colspan="2" class="tdinformation-header">Mark Hansen</td>
+        <td></td>
+        </tr>
+        <tr>
+        <td class="tdright tdinformation">Birthday: 
+        <br>Occupation:</td>
+        <td class="tdleft tdinformation">
+        01/01 1991
+        <br>Student
+       	</td>
+        <td>HHEEJ</td>
         </tr>
         </table>
         

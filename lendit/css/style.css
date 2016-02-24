@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,900);
+
 /*
  * Globals
  */
@@ -17,6 +19,13 @@ h6, .h6 {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: normal;
   color: #333;
+}
+
+h2 {
+	color:#F20746;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size:18px;
+	text-transform:uppercase;
 }
 
 
@@ -175,16 +184,35 @@ h6, .h6 {
 /* Profile */
 
 .profilepicture {
-	border-radius: 50%;
-	width: 20%;
-	padding-bottom: 20%;
-	margin: auto;
-	box-shadow: 0 0 0 1px #CCC;
-    transition: box-shadow 0.3s;
+	border-radius: 0%;
+	width: 100%;
+	padding-bottom: 100%;
 }
 
-.profilepicture:hover{
-	box-shadow: 0 0 0 2px #F69;
+.tdinformation-header {
+	padding-top:20px;
+	padding-bottom:20px;
+	text-align:center;
+	background-color:#f2c16b;
+	color:#fff;
+	text-transform:uppercase;
+	font-family: 'Roboto', sans-serif;
+}
+
+.tdinformation {
+	background-color:#f2c16b;
+	color:#fff;
+	font-family: 'Roboto', sans-serif;
+}
+
+.tdright {
+	text-align:left;
+	width:20%;
+	padding-left:10px;
+}
+
+.tdleft {
+	text-align:left;
 }
 
 /*
