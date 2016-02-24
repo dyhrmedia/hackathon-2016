@@ -20,7 +20,7 @@
 
   <body>
     <div class="blog-masthead">
-      <div class="container">
+      <div class="container containhead">
         <a class="navbar-brand" href="index.html"><img src="logo.png" id="logo" alt="Logo" width="" height="70"/></a>
         <nav class="blog-nav">
           <a class="blog-nav-item active" href="#">home</a>
@@ -69,7 +69,32 @@
             <h2 class="blog-post-title">Bike for rent</h2>
             <p class="blog-post-meta">Januar 1, 2016 <a class="pinky" href="#">Mark Hansen</a></p>
             <p>This is a very nice bike. You can rent it for a week. It is blue and have 2 wheels. So now you just write me and it is yours for the week.</p>
-            <a class="btn btn-default" type="button" href="#">Rent it</a>
+            <!-- Trigger the modal with a button -->
+            <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal">Rent it</button>
+
+            <!-- Modal -->
+            <div id="myModal" class="modal fade" role="dialog">
+              <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Bike for rent</h4>
+                  </div>
+                  <div class="modal-body">
+                    <img src="bike.png" class="img-responsive modalimg" alt="Post image" width="" height=""/></a>
+                    <p class="blog-post-meta">Januar 1, 2016 <a class="pinky" href="#">Mark Hansen</a></p>
+                    <p>This is a very nice bike. You can rent it for a week. It is blue and have 2 wheels. So now you just write me and it is yours for the week.</p>
+                   
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
           </div><!-- /.blog-post -->
           <hr>
         <div class="blog-post">
