@@ -1,6 +1,7 @@
 /*
  * Globals
  */
+
 html {
   position: relative;
   min-height: 100%;
@@ -34,9 +35,14 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 .navbar {
   background-color: #3E7264;
   height: 100px;
+  position:relative;
+  min-height:50px;
+  margin-bottom:0px;
   line-height: 75px;
   -webkit-box-shadow: inset 0 -2px 5px rgba(0, 0, 0, .1);
   box-shadow: inset 0 -2px 5px rgba(0, 0, 0, .1);
+  border-radius:0px;
+  border:0px;
 }
 
 /* Nav links */
@@ -47,7 +53,6 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   padding: 10px;
   font-weight: 500;
   color: #cdddeb;
-  font-size:;
 }
 .nav-item:hover, .nav-item:focus {
   color: #fff;
@@ -79,7 +84,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 
 .header {
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: px;
 }
 .title {
   margin-top: 30px;
@@ -106,6 +111,8 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 .sidebar-module {
   padding: 15px;
   margin: 0 -15px 15px;
+  background-color: #DCE2DF;
+  color: #3E7264;
 }
 .sidebar-module-inset {
   padding: 15px;
@@ -142,7 +149,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 }
 .post-meta {
   margin-bottom: 20px;
-  color: #999;
+  color: #3E7264;
 }
 
 /*
@@ -150,13 +157,13 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
  */
 
 .footer {
-
   height: 80px;
   line-height: 80px;
 }
 .footer p:last-child {
   margin-bottom: 0;
 }
+
 /*
  * Footer
  */
@@ -170,39 +177,34 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   padding: 45px 50px;
   margin-top: 80px;
 }
-
-.blog-footer .footer-left p{
-  color:  #8f9296;
+.blog-footer .footer-left p {
+  color: #8f9296;
   font-size: 14px;
   margin: 0;
 }
-
-.blog-footer p.footer-links{
-  font-size:18px;
+.blog-footer p.footer-links {
+  font-size: 18px;
   font-weight: bold;
-  color:  #ffffff;
+  color: #ffffff;
   margin: 0 0 10px;
   padding: 0;
 }
-
-.blog-footer p.footer-links a{
-  display:inline-block;
+.blog-footer p.footer-links a {
+  display: inline-block;
   line-height: 1.8;
   text-decoration: none;
-  color:  inherit;
+  color: inherit;
 }
-
-.blog-footer .footer-right{
+.blog-footer .footer-right {
   float: right;
   margin-top: 6px;
   max-width: 180px;
 }
-
-.blog-footer .footer-right a{
+.blog-footer .footer-right a {
   display: inline-block;
   width: 35px;
   height: 35px;
-  background-color:  #7ABFAC;
+  background-color: #7ABFAC;
   border-radius: 2px;
   font-size: 20px;
   color: #ffffff;
@@ -210,36 +212,29 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   line-height: 35px;
   margin-left: 3px;
 }
-.blog-footer .footer-about{
+.blog-footer .footer-about {
   line-height: 20px;
-  color:  #92999f;
+  color: #92999f;
   font-size: 13px;
   font-weight: normal;
   margin: 0;
 }
-
-.blog-footer .footer-about span{
+.blog-footer .footer-about span {
   display: block;
-  color:  #ffffff;
+  color: #ffffff;
   font-size: 14px;
   font-weight: bold;
   margin-bottom: 20px;
 }
-
-
 @media (max-width: 600px) {
-
-  .blog-footer .footer-left,
-  .blog-footer .footer-right{
+  .blog-footer .footer-left, .blog-footer .footer-right {
     text-align: center;
   }
-
-  .blog-footer .footer-right{
+  .blog-footer .footer-right {
     float: none;
     margin: 0 auto 20px;
   }
-
-  .blog-footer .footer-left p.footer-links{
+  .blog-footer .footer-left p.footer-links {
     line-height: 1.8;
   }
 }
@@ -259,130 +254,110 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   color: #3E7264;
 }
 .hovereffect {
-    width: 100%;
-    height: 100%;
-    float: left;
-    overflow: hidden;
-    position: relative;
-    text-align: center;
-    cursor: default;
+  width: 100%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
 }
 .hovereffect .overlay {
-    width: 100%;
-    position: absolute;
-    overflow: hidden;
-    left: 0;
-	top: auto;
-	bottom: 0;
-	padding: 1em;
-	height: 4.75em;
-	background: #82CCB7;
-	color: #3c4a50;
-  opacity:0.8;
-	-webkit-transition: -webkit-transform 0.35s;
-	transition: transform 0.35s;
-	-webkit-transform: translate3d(0,100%,0);
-	transform: translate3d(0,100%,0);
+  width: 100%;
+  position: absolute;
+  overflow: hidden;
+  left: 0;
+  top: auto;
+  bottom: 0;
+  padding: 1em;
+  height: 4.75em;
+  background: #82CCB7;
+  color: #3c4a50;
+  opacity: 0.8;
+  -webkit-transition: -webkit-transform 0.35s;
+  transition: transform 0.35s;
+  -webkit-transform: translate3d(0, 100%, 0);
+  transform: translate3d(0, 100%, 0);
 }
-
 .hovereffect img {
-    display: block;
-    position: relative;
-	-webkit-transition: -webkit-transform 0.35s;
-	transition: transform 0.35s;
+  display: block;
+  position: relative;
+  -webkit-transition: -webkit-transform 0.35s;
+  transition: transform 0.35s;
 }
-
 .hovereffect:hover img {
--webkit-transform: translate3d(0,-10%,0);
-	transform: translate3d(0,-10%,0);
+  -webkit-transform: translate3d(0, -10%, 0);
+  transform: translate3d(0, -10%, 0);
 }
-
 .hovereffect h2 {
-    text-transform: uppercase;
-    color: #fff;
-    text-align: center;
-    position: relative;
-    font-size: 17px;
-    padding: 10px;
-    background: rgba(0, 0, 0, 0.6);
-	float: left;
-	margin: 0px;
-	display: inline-block;
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  font-size: 17px;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.6);
+  float: left;
+  margin: 0px;
+  display: inline-block;
 }
-
 .hovereffect a.info {
-    display: inline-block;
-    text-decoration: none;
-    padding: 7px 14px;
-    text-transform: uppercase;
-	color: white;
-	border: 1px solid #fff;
-	margin: 50px 0 0 0;
-	background-color: transparent;
+  display: inline-block;
+  text-decoration: none;
+  padding: 7px 14px;
+  text-transform: uppercase;
+  color: white;
+  border: 1px solid #fff;
+  margin: 50px 0 0 0;
+  background-color: transparent;
 }
 .hovereffect a.info:hover {
-    box-shadow: 0 0 5px #fff;
+  box-shadow: 0 0 5px #fff;
 }
-
-
 .hovereffect p.icon-links a {
-	float: right;
-	color: #3c4a50;
-	font-size: 1.4em;
+  float: right;
+  color: #3c4a50;
+  font-size: 1.4em;
 }
-
-.hovereffect:hover p.icon-links a:hover,
-.hovereffect:hover p.icon-links a:focus {
-	color: #252d31;
+.hovereffect:hover p.icon-links a:hover, .hovereffect:hover p.icon-links a:focus {
+  color: #252d31;
 }
-
-.hovereffect h2,
-.hovereffect p.icon-links a {
-	-webkit-transition: -webkit-transform 0.35s;
-	transition: transform 0.35s;
-	-webkit-transform: translate3d(0,200%,0);
-	transform: translate3d(0,200%,0);
+.hovereffect h2, .hovereffect p.icon-links a {
+  -webkit-transition: -webkit-transform 0.35s;
+  transition: transform 0.35s;
+  -webkit-transform: translate3d(0, 200%, 0);
+  transform: translate3d(0, 200%, 0);
 }
-
 .hovereffect p.icon-links a span:before {
-	display: inline-block;
-	padding: 8px 10px;
-	speak: none;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+  display: inline-block;
+  padding: 8px 10px;
+  speak: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
-
-
-.hovereffect:hover .overlay,
-.hovereffect:hover h2,
-.hovereffect:hover p.icon-links a {
-	-webkit-transform: translate3d(0,0,0);
-	transform: translate3d(0,0,0);
+.hovereffect:hover .overlay, .hovereffect:hover h2, .hovereffect:hover p.icon-links a {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
 }
-
 .hovereffect:hover h2 {
-	-webkit-transition-delay: 0.05s;
-	transition-delay: 0.05s;
+  -webkit-transition-delay: 0.05s;
+  transition-delay: 0.05s;
 }
-
 .hovereffect:hover p.icon-links a:nth-child(3) {
-	-webkit-transition-delay: 0.1s;
-	transition-delay: 0.1s;
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
 }
-
 .hovereffect:hover p.icon-links a:nth-child(2) {
-	-webkit-transition-delay: 0.15s;
-	transition-delay: 0.15s;
+  -webkit-transition-delay: 0.15s;
+  transition-delay: 0.15s;
 }
-
 .hovereffect:hover p.icon-links a:first-child {
-	-webkit-transition-delay: 0.2s;
-	transition-delay: 0.2s;
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
 }
-
 p {
-  color:white;
-  opacity:1;
+  color: white;
+  opacity: 1;
 }
 .sidebar-title {
   font-size: 20px;
@@ -390,4 +365,105 @@ p {
 .smallimg {
   margin-top: 20px;
   margin-bottom: 20px;
+}
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+
+/* Carousel base class */
+
+.carousel {
+  height: 300px;
+  margin-bottom: 60px;
+  width: 100%;
+}
+
+/* Since positioning the image, we need to help out the caption */
+
+.carousel-caption {
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+
+.carousel .item {
+  height: 300px;
+  background-color: #777;
+}
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 500px;
+}
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+
+/* Center align the text within the three columns below the carousel */
+
+.marketing .col-lg-4 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.marketing h2 {
+  font-weight: normal;
+}
+.marketing .col-lg-4 p {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 80px 0;
+  /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 768px) {
+  /* Navbar positioning foo */
+  .navbar-wrapper {
+    margin-top: 20px;
+  }
+  .navbar-wrapper .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .navbar-wrapper .navbar {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  /* The navbar becomes detached from the top, so we round the corners */
+  .navbar-wrapper .navbar {
+    border-radius: 4px;
+  }
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    font-size: 21px;
+    line-height: 1.4;
+  }
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+@media (min-width: 992px) {
+  .featurette-heading {
+    margin-top: 120px;
+  }
 }
