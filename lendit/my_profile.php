@@ -78,44 +78,62 @@
 
         <div class="col-sm-8 col-sm-offset-1 blog-main">
         
-        <table width="100%">
+  		
+<?php
+$host = "phpmyadmin.mmd.eal.dk";
+$user = "thar0076.mmd.eal";
+$password = "Kithas123";
+$datbase = "thar0076_mmd_eal_dk";
+mysql_connect($host,$user,$password);
+mysql_select_db($datbase);
+	
+$sql = "SELECT * FROM members;";
+$result = mysqli_query($dbc, $sql);
+if (mysqli_num_rows($result) > 0) {
+    // output data of each row
+    while($row = mysqli_fetch_assoc($result)) {
+
+		
+		echo "
+		      <table width='100%'>
         <tr>
-        <td width="30%" class="tdinformation">
+        <td width='30%' class='tdinformation'>
 		<div class='profilepicture' style='background: url(pictures/profiles/mark_hansen.JPG) no-repeat; background-size:cover; background-position:center;'></div></td>
         
-        <td rowspan="3" class="tdpost">
-          <div class="profile-post">
+        <td rowspan='3' class='tdpost'>
+          <div class='profile-post'>
             <h2>Bike for rent</h2>
-            <img src="bike.png" class="tdpost picture">
+            <img src='bike.png' class='tdpost picture'>
             <p>This is a very nice bike. You can rent it for a week. It is blue and have 2 wheels. So now you just write me and it is yours for the week.</p>
-            <a class="btn btn-default" type="button" href="#">Lend it</a>
+            <a class='btn btn-default' type='button' href='#'>Lend it</a>
           </div><!-- /.blog-post --></td>
         </tr>
         <tr>
-        <td class="tdinformation tdheader">Mark Hansen</td>
+		<td class='tdinformation tdheader'>". $row["first_name"] ." ". $row["last_name"] ."</td>
         </tr>
         <tr>
-        <td class="tdright tdinformation">
-                 
-          <p>Munkebjergvej 10
-            <br>5000 Odense C
-            <br>Danmark
-            </p>
-          
-          <p>
-            +45 20 10 20 10
-            <br>markhansen@live.dk
-            <bR><bR>
-            </p>
-          
-          <p><h2>Ratings</h2>
+		<td class='tdright tdinformation'>
+		<p>". $row["zipcode"] ." ". $row["city"] ."
+		<br>
+		<br>". $row["telephone"] ."
+		<br>". $row["email"] ."
+		
+		<p><h2>Ratings</h2>
           </p>
           <p>Feedback time</p>
           <p>Trustworth</p>
-          <p>Product quality</p></td>
+          <p>Product quality</p>    
+          </td>
         </tr>
         </table>
         
+		";
+		
+	}
+	}
+ 
+?>
+      
         
           </div><!-- /.blog-post -->
           
