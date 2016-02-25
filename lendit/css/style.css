@@ -152,6 +152,80 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   color: #3E7264;
 }
 
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,900);
+
+
+/* Profile */
+
+.profilepicture {
+	border-radius: 0%;
+	width: 100%;
+	padding-bottom: 100%;
+	border:2px solid #f2c16b;
+}
+
+
+
+.tdinformation {
+	background-color:#f2c16b;
+	font-size:12px;
+	color:#fff;
+	font-family: 'Roboto', sans-serif;
+	padding-right:-50px;
+	
+}
+
+.tdheader {
+	padding-top:20px;
+	padding-bottom:10px;
+	text-align:center;
+	background-color:#f2c16b;
+	color:#fff;
+	font-size:20px;
+	text-transform:uppercase;
+	font-family: 'Roboto', sans-serif;
+}
+
+.tdinformation h2 {
+	background-color:#f2c16b;
+	font-size:16px;
+	text-transform:uppercase;
+	color:#fff;
+	font-family: 'Roboto', sans-serif;
+}
+
+.tdright {
+	text-align:left;
+	width:20%;
+	padding-left:10px;
+}
+
+.tdleft {
+	text-align:left;
+}
+
+.tdpost {
+	padding-left:20px;
+	margin:auto;
+	vertical-align:text-top;
+	text-align:center;
+	font-size:12px;
+	font-family: 'Roboto', sans-serif;
+}
+
+.picture {
+	width:50%;
+}
+
+.profile-post {
+	background-color:#fff;
+	border-radius:20px;
+	
+}
+
+
+
 /*
  * Footer
  */
