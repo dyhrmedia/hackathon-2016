@@ -1,10 +1,14 @@
 /*
  * Globals
  */
-
+html {
+  position: relavtive;
+  min-height: 100%;
+}
 body {
   font-family: "Helvetica Neue", "Helvetica", Times, serif;
   color: #555;
+  margin-bottom: 80px;
 }
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   margin-top: 0;
@@ -147,7 +151,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 
 .footer {
   background-color: #7ABFAC;
-  position: absolute;
+  position: fixed;
   bottom: 0;
   width: 100%;
   height: 80px;
