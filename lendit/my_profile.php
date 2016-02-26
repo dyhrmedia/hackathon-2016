@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<<<<<<< HEAD:lendit/index.html
 
 <head>
   <meta charset="utf-8">
@@ -30,6 +31,46 @@
           <span class="icon-bar"></span>
         </button>
         <a class="navbar-brand" href="index.html"><img src="logo.png" id="logo" alt="Logo" width="" height="70" /></a>
+=======
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>lendit</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <div class="blog-masthead">
+      <div class="container">
+        <a class="navbar-brand" href="index.html"><img src="logo.png" id="logo" alt="Logo" width="" height="70"/></a>
+        <nav class="blog-nav">
+          <a class="blog-nav-item active" href="#">home</a>
+          <a class="blog-nav-item" href="#">profile</a>
+          <a class="blog-nav-item active" href="#">about</a>
+          <a class="btn btn-default" type="button" href="#">Login</a>
+        </nav>
+>>>>>>> origin/thara:lendit/my_profile.php
       </div>
 
       <!-- Collect the nav links, forms, and other content for toggling -->
@@ -43,6 +84,7 @@
       </div>
       <!-- /.navbar-collapse -->
     </div>
+<<<<<<< HEAD:lendit/index.html
     <!-- /.container-fluid -->
   </nav>
 <div class="carousel">
@@ -110,6 +152,17 @@
               <div class="overlay">
                 <a class="text-title"><p>Renting out a bike</p></a>
               </div>
+=======
+    
+    <!-- HEADER ENDS -->
+    
+    <div class="container">
+      <div class="row space">
+        <div class="col-sm-3 blog-sidebar">
+          <form role="search">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Search">
+>>>>>>> origin/thara:lendit/my_profile.php
             </div>
             </div>
 
@@ -182,6 +235,7 @@
             </div>
             </div>
           </div>
+<<<<<<< HEAD:lendit/index.html
         </div>
 
       </div>
@@ -247,6 +301,81 @@
         <img src="logo.png" id="logo" alt="Logo" width="" height="50"/></a>
         <p>Lendit &copy; 2016</p>
       </div>
+=======
+        </div><!-- /.blog-sidebar -->
+
+        <div class="col-sm-8 col-sm-offset-1 blog-main">
+        
+  		
+<?php
+$host = "phpmyadmin.mmd.eal.dk";
+$user = "thar0076.mmd.eal";
+$password = "Kithas123";
+$datbase = "thar0076_mmd_eal_dk";
+mysql_connect($host,$user,$password);
+mysql_select_db($datbase);
+	
+$sql = "SELECT * FROM members;";
+$result = mysqli_query($dbc, $sql);
+if (mysqli_num_rows($result) > 0) {
+    // output data of each row
+    while($row = mysqli_fetch_assoc($result)) {
+
+		
+		echo "
+		      <table width='100%'>
+        <tr>
+        <td width='30%' class='tdinformation'>
+		<div class='profilepicture' style='background: url(pictures/profiles/mark_hansen.JPG) no-repeat; background-size:cover; background-position:center;'></div></td>
+        
+        <td rowspan='3' class='tdpost'>
+          <div class='profile-post'>
+            <h2>Bike for rent</h2>
+            <img src='bike.png' class='tdpost picture'>
+            <p>This is a very nice bike. You can rent it for a week. It is blue and have 2 wheels. So now you just write me and it is yours for the week.</p>
+            <a class='btn btn-default' type='button' href='#'>Lend it</a>
+          </div><!-- /.blog-post --></td>
+        </tr>
+        <tr>
+		<td class='tdinformation tdheader'>". $row["first_name"] ." ". $row["last_name"] ."</td>
+        </tr>
+        <tr>
+		<td class='tdright tdinformation'>
+		<p>". $row["zipcode"] ." ". $row["city"] ."
+		<br>
+		<br>". $row["telephone"] ."
+		<br>". $row["email"] ."
+		
+		<p><h2>Ratings</h2>
+          </p>
+          <p>Feedback time</p>
+          <p>Trustworth</p>
+          <p>Product quality</p>    
+          </td>
+        </tr>
+        </table>
+        
+		";
+		
+	}
+	}
+ 
+?>
+      
+        
+          </div><!-- /.blog-post -->
+          
+        
+
+        </div><!-- /.blog-main -->
+      </div><!-- /.row -->
+    </div><!-- /.container -->
+
+    <footer class="blog-footer">
+      <p>
+        <a href="#">lendit 2016</a>
+      </p>
+>>>>>>> origin/thara:lendit/my_profile.php
     </footer>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -262,4 +391,15 @@
   </script>
 </body>
 
+<<<<<<< HEAD:lendit/index.html
+=======
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+>>>>>>> origin/thara:lendit/my_profile.php
 </html>
