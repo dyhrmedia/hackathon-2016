@@ -3,9 +3,10 @@
           <h4>Categories</h4>
           <ul class="list-unstyled">
             <li class="filter" data-filter="all">All</li>
-            <li class="filter" data-filter=".bike-1">Bike1</li>
-            <li class="filter" data-filter=".bike-2">Bike2</li>
-            <li class="filter" data-filter=".bike-3">Bike3</li>
+            <li class="filter" data-filter=".trans">Transportation</li>
+            <li class="filter" data-filter=".kitchen">Kitchenware</li>
+            <li class="filter" data-filter=".outdoor">Outdoor</li>
+            <li class="filter" data-filter=".other">Other</li>
           </ul>
         </div>
         <div class="sidebar-module">

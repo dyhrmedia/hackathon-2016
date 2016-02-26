@@ -13,7 +13,7 @@
           <div class='profile-post'>
             <h4>Bike for rent</h4>
             <img src='bike.png' class='tdpost picture'><br>
-            This is a very nice bike. You can rent it for a week. It is blue and have 2 wheels. So now you just write me and it is yours for the week.
+            <p>This is a very nice bike. You can rent it for a week. It is blue and have 2 wheels. So now you just write me and it is yours for the week.</p>
             <br><a class='btn btn-default' type='button' href='#'>Lend it</a>
           </div><!-- /.blog-post -->
           </td>
@@ -44,7 +44,7 @@
         </tr>
         <tr>
 		<td class='tdright tdinformation'>
-		<p>5000 Odense C
+		<p style="color:#fff;">5000 Odense C
 		<br>
 		<br>+45 20 10 20 10
 		<br>markhansen@live.dk
